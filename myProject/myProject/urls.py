@@ -20,5 +20,7 @@ from myApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index),
-    path('command/<int:id>/<cmd>',views.command),
-]
+    path('results/',views.profile),
+    path('search',views.search),
+    path('GetExperts',views.GetExperts),
+    path("expert",views.showExperts)]
